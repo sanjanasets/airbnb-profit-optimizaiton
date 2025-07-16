@@ -1,59 +1,66 @@
+🏡 Airbnb Profit Optimization with Machine Learning
+This project uses a Random Forest Regressor trained on Seattle Airbnb data to predict profits and simulate "what-if" counterfactual scenarios — helping hosts explore actionable ways to improve their earnings.
 
-Using a Random Forest Regressor trained on Seattle Airbnb data, we predict profits and evaluate **"what-if" counterfactual scenarios** — such as becoming a superhost, changing room type, or adding beds — to recommend actionable improvements.
+🚀 Project Goals
+✅ Predict Airbnb listing profit using listing and host features
 
----
+🔍 Identify the most influential factors driving profit
 
-## 🚀 Project Goals
-- Predict Airbnb listing profit based on listing features
-- Identify key drivers of profit
-- Provide **data-backed recommendations** to improve profit
-- Enable **what-if simulations** for hosts using trained ML models
+📈 Provide personalized, data-driven recommendations
 
----
+💡 Enable what-if simulations to help hosts make better decisions
 
-## 📊 Tools & Technologies
-- Python (pandas, scikit-learn, matplotlib, seaborn)
-- Jupyter Notebook
-- Machine Learning: Random Forest Regressor
-- Exploratory Data Analysis (EDA)
-- Counterfactual simulation ("what-if" engine)
+📊 Tools & Technologies
+Python: pandas, scikit-learn, matplotlib, seaborn
 
----
+Jupyter Notebook: Exploratory analysis, model training, evaluation
 
-## 📁 Files
-| File | Description |
-|------|-------------|
-| `airbnb_profit_model.ipynb` | Main notebook with EDA, model training, evaluation, and recommendations |
-| `listings.csv` | Cleaned dataset from Seattle Airbnb open data |
-| `README.md` | Project overview and documentation |
-| `images/` | Folder with saved charts (optional) |
+ML Model: RandomForestRegressor
 
----
+Simulations: Counterfactual analysis via custom “what-if” engine
 
-## 📈 Model Performance
+📁 Project Structure
+File/Folder	Description
+airbnb_profit_model.ipynb	Main notebook with EDA, model training, evaluation, and simulation code
+listings.csv	Cleaned Airbnb dataset (Seattle)
+README.md	Project documentation (this file)
+images/	Folder for visualizations (optional)
 
-- **MAE**: \$11.62  
-- **RMSE**: \$18.77  
-- **R² Score**: 0.86  
+📈 Model Performance
+Metric	Value
+MAE	$11.62
+RMSE	$18.77
+R²	0.86
 
----
+🔍 Key Insights
+Top Predictors:
 
-## 🔍 Key Insights
+price
 
-- `price`, `price_per_person`, and `cleaning_fee` were top predictors of profit
-- Listings in certain neighborhoods (e.g., Wallingford) had higher returns
-- Counterfactual simulations revealed that:
-  - Becoming a **superhost** increased profit
-  - Adding a **bed** improved revenue slightly
-  - Adjusting **room type** had the most impact for some listings
+price_per_person
 
----
+cleaning_fee
 
-## 💡 Recommendation Engine
+Neighborhood Trends:
+Listings in areas like Wallingford had consistently higher profit margins.
 
-A custom function runs what-if scenarios like:
+Feature Impact from Simulations:
 
-- 🏠 Converting to "Entire Home"
-- 🛏 Adding more beds
-- 🌟 Becoming a Superhost
+🌟 Becoming a Superhost → higher profit
+
+🛏 Adding an extra bed → moderate gain
+
+🏠 Switching room type (e.g., to Entire Home) → highest impact in some cases
+
+💡 Recommendation Engine
+A custom-built function lets you explore how changes to a listing might affect profit.
+
+Supported what-if scenarios:
+
+✅ Become a Superhost
+
+✅ Add extra beds
+
+✅ Change room type (e.g., Private → Entire Home)
+
 
