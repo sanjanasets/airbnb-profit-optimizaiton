@@ -57,5 +57,3 @@ A custom function runs what-if scenarios like:
 - 🛏 Adding more beds
 - 🌟 Becoming a Superhost
 
-And returns predicted profits for each:
-
